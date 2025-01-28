@@ -119,6 +119,7 @@ export const TemplatePreview = () => {
                 />
               </div>
             </div>
+            <span>Add this code to your HTML page and see the magic!</span>
 
             <div className="p-4 rounded-md overflow-auto max-h-[500px]">
               {/* <pre className=" whitespace-pre-wrap text-left">{htmlCode}</pre> */}
