@@ -31,6 +31,10 @@ app.use("/api/auth", usersRoutes);
 // app.use("/api/template", templateRoutes);
 app.use("/api/template", templateCardsRoutes);
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the server! The server is running successfully.");
+});
+
 app.use((req, res, next) => {
   const error = new HttpError("Could not find this route.", 404);
   throw error;
